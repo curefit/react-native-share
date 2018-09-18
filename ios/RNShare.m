@@ -52,6 +52,10 @@
     return dispatch_get_main_queue();
 }
 
++(BOOL)requiresMainQueueSetup {
+    return YES;
+}
+
 - (CGRect)sourceRectInView:(UIView *)sourceView
              anchorViewTag:(NSNumber *)anchorViewTag
 {
